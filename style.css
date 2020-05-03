@@ -164,7 +164,7 @@
         transform: translate(-50%, -50%);
         animation: flash 4s linear 1s;
         margin-top: 30px;
-        border: 2px white solid;
+        /*border: 2px white solid;*/
     }
     /* .form-area {
     text-align: center;
@@ -480,7 +480,7 @@
         }
         p {
             font-size: 35px;
-            width: 100%;
+            width: 300px;
         }
         h6 {
             font-size: 10px;

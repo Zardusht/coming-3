@@ -1,170 +1,172 @@
-/***** RESET *****/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    /*font-size: 100%;
+    /***** RESET *****/
+    
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    font,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        /*font-size: 100%;
     vertical-align: baseline;*/
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
-/* tables still need 'cellspacing="0"' in the markup */
-
-textarea {
-    overflow: auto;
-}
-
-
-/***** RESET *****/
-
-.container {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(13, 13, 13);
-    text-align: center;
-}
-
-.box {
-    height: 100%;
-    width: 50%;
-    position: relative;
-    float: left;
-    animation: flash 4s linear 1s;
-    /* background-color: rgb(5, 4, 3); */
-}
-
-.box img {
-    transform: translate(-5%, 10%);
-    /* border: 2px white solid; */
-}
-
-p {
-    position: absolute;
-    font-size: 65px;
-    font-weight: 900;
-    letter-spacing: 1%;
-    color: white;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    animation: flash 4s linear 1s;
-}
-
-.text-area {
-    position: absolute;
-    width: 43%;
-    /* max-width: 800px; */
-    height: 60%;
-    top: 50%;
-    left: 45%;
-    transform: translate(20%, -55%);
-    /* border: 1px white solid; */
-}
-
-.logo {
-    position: inherit;
-    width: 100%;
-    height: 100%;
-    left: 50%;
-    top: 0%;
-    transform: translate(-50%, -30%);
-    animation: flash 4s linear 1s;
-}
-
-.form-area {
+    }
+    
+    html,
+    body {
+        height: 100%;
+    }
+    
+    body {
+        line-height: 1;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    blockquote,
+    q {
+        quotes: none;
+    }
+    
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    /* tables still need 'cellspacing="0"' in the markup */
+    
+    textarea {
+        overflow: auto;
+    }
+    /***** RESET *****/
+    
+    .container {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(13, 13, 13);
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .box {
+        height: 100%;
+        width: 50%;
+        position: relative;
+        float: left;
+        animation: flash 4s linear 1s;
+        /* background-color: rgb(5, 4, 3); */
+    }
+    
+    .box img {
+        transform: translate(-5%, 10%);
+        /* border: 2px white solid; */
+    }
+    
+    .text-area {
+        position: absolute;
+        width: 43%;
+        /* max-width: 800px; */
+        height: 60%;
+        top: 50%;
+        left: 45%;
+        transform: translate(20%, -55%);
+        /* border: 1px white solid; */
+    }
+    
+    .logo {
+        position: absolute;
+        width: 600px;
+        height: 200px;
+        overflow: hidden;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        animation: flash 4s linear 1s;
+        /* border: 2px white solid; */
+    }
+    
+    p {
+        position: absolute;
+        width: 100%;
+        font-size: 65px;
+        font-weight: 900;
+        letter-spacing: 1%;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: flash 4s linear 1s;
+        margin-top: 30px;
+        /* border: 2px white solid; */
+    }
+    /* .form-area {
     text-align: center;
     position: absolute;
     top: 60%;
@@ -172,9 +174,8 @@ p {
     transform: translate(-50%, -50%);
     animation: flash 4s linear 1s;
     margin: 45px 0 0 0;
-}
-
-.form-area input {
+} */
+    /* .form-area input {
     padding: 10px;
     font-size: 19px;
     width: 300px;
@@ -204,9 +205,8 @@ p {
     -webkit-box-shadow: inset 2px 5px 55px 15px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: inset 2px 5px 55px 15px rgba(0, 0, 0, 0.4);
     box-shadow: inset 2px 5px 55px 15px rgba(0, 0, 0, 0.4);
-}
-
-#social {
+} */
+    /* #social {
     width: 50px;
     height: 50px;
     background-color: rgb(13, 13, 13);
@@ -214,26 +214,23 @@ p {
     top: 88%;
     transform: translate(-500%, 0);
     border: none;
-    /* animation: flash 4s linear 1s;
-    -webkit-animation: flash 4s linear 1s; */
-}
-
-#social i {
+    animation: flash 4s linear 1s;
+    -webkit-animation: flash 4s linear 1s;
+} */
+    /* #social i {
     font-size: 35px;
     color: white;
-    /* animation: flash 4s linear 1s;
-    -webkit-animation: flash 4s linear 1s; */
-}
-
-#social i span {
+    animation: flash 4s linear 1s;
+    -webkit-animation: flash 4s linear 1s;
+} */
+    /* #social i span {
     font-size: 23px;
     font-style: italic;
     margin-left: 10px;
-    /* animation: flash 4s linear 1s;
-    -webkit-animation: flash 4s linear 1s; */
-}
-
-#mail {
+    animation: flash 4s linear 1s;
+    -webkit-animation: flash 4s linear 1s;
+} */
+    /* #mail {
     width: 50px;
     height: 50px;
     background-color: rgb(13, 13, 13);
@@ -241,307 +238,316 @@ p {
     top: 88%;
     transform: translate(120%, 0);
     border: none;
-    /* animation: flash 4s linear 1s;
-    -webkit-animation: flash 4s linear 1s; */
-}
-
-#mail i {
+    animation: flash 4s linear 1s;
+    -webkit-animation: flash 4s linear 1s;
+} */
+    /* #mail i {
     font-size: 35px;
     color: white;
-    /* animation: flash 4s linear 1s;
-    -webkit-animation: flash 4s linear 1s; */
-}
-
+    animation: flash 4s linear 1s;
+    -webkit-animation: flash 4s linear 1s;
+} */
+    /* 
 #mail i span {
     font-size: 23px;
     font-style: italic;
     margin-left: 10px;
-    /* animation: flash 4s linear 1s;
-    -webkit-animation: flash 4s linear 1s; */
-}
-
-h6 {
-    color: white;
-    position: absolute;
-    font-size: 23px;
-    top: 93.8%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    opacity: 0.35;
-}
-
-h6 a {
-    text-decoration: none;
-    color: white;
-}
-
-@keyframes flash {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 0.3;
-    }
-    45% {
-        opacity: 0.5;
-    }
-    75% {
-        opacity: 0.8;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@media (max-width:1755px) {
-    p {
-        font-size: 65px;
-        width: 600px;
-    }
-}
-
-@media (max-width:1210px) {
-    p {
-        font-size: 65px;
-        width: 600px;
-    }
-    .text-area {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-
-@media (max-width:1051px) {
-    p {
-        font-size: 65px;
-        width: 600px;
-    }
+    animation: flash 4s linear 1s;
+    -webkit-animation: flash 4s linear 1s;
+} */
+    
     h6 {
+        color: white;
+        position: absolute;
         font-size: 18px;
-    }
-}
-
-@media (max-width:720px) {
-    p {
-        font-size: 65px;
-        width: 600px;
-    }
-    #mail i,
-    #social i {
-        font-size: 25px;
-    }
-    #mail i span,
-    #social i span {
-        font-size: 15px;
-    }
-    .box img {
-        visibility: hidden;
-    }
-    h6 {
-        font-size: 15px;
-    }
-}
-
-@media (max-width:650px) {
-    .box img {
-        visibility: hidden;
-    }
-    p {
-        font-size: 35px;
-        width: 400px;
-    }
-    h6 {
-        font-size: 15px;
-    }
-    #social {
-        width: 40px;
-        height: 40px;
-        background-color: rgb(13, 13, 13);
-        position: absolute;
-        top: 95%;
-        transform: translate(-450%, 0);
-        border: none;
-    }
-    #mail {
-        width: 50px;
-        height: 50px;
-        background-color: rgb(13, 13, 13);
-        position: absolute;
-        top: 95%;
-        transform: translate(40%, 0);
-        border: none;
-    }
-    .form-area {
-        text-align: center;
-        position: absolute;
-        top: 60%;
+        width: 100%;
+        top: 93.8%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        animation: flash 4s linear 1s;
-        margin: 45px 0 0 0;
+        transform: translate(-50%, 0);
+        opacity: 0.35;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
     }
-    .form-area input {
-        padding: 10px;
-        font-size: 19px;
-        width: 200px;
-        height: 20px;
-        display: block;
-        border: none;
-        background-color: rgb(13, 13, 13);
-        text-align: center;
-        border: 2px white solid;
-    }
-    .form-area button {
-        display: block;
-        margin: 30px 0 0 0;
-        border: none;
-        font-size: 19px;
-        padding: 10px;
-        width: 220px;
-        height: 40px;
-        background-color: rgb(13, 13, 13);
+    
+    h6 a {
+        text-decoration: none;
         color: white;
-        border: 2px white solid;
     }
-}
-
-@media (max-width:500px) {
-    .box img {
-        visibility: hidden;
+    
+    @keyframes flash {
+        0% {
+            opacity: 0;
+        }
+        25% {
+            opacity: 0.3;
+        }
+        45% {
+            opacity: 0.5;
+        }
+        75% {
+            opacity: 0.8;
+        }
+        100% {
+            opacity: 1;
+        }
     }
-    p {
-        font-size: 35px;
-        width: 300px;
+    
+    @media (max-width:1755px) {
+        p {
+            font-size: 65px;
+            width: 600px;
+        }
     }
-    h6 {
-        font-size: 10px;
+    
+    @media (max-width:1210px) {
+        p {
+            font-size: 65px;
+            width: 600px;
+        }
+        .text-area {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
-    #social {
-        width: 40px;
-        height: 40px;
-        background-color: rgb(13, 13, 13);
-        position: absolute;
-        top: 95%;
-        transform: translate(-400%, 0);
-        border: none;
+    
+    @media (max-width:1051px) {
+        p {
+            font-size: 65px;
+            width: 600px;
+        }
+        h6 {
+            font-size: 18px;
+        }
     }
-    #mail {
-        width: 50px;
-        height: 50px;
-        background-color: rgb(13, 13, 13);
-        position: absolute;
-        top: 95%;
-        transform: translate(20%, 0);
-        border: none;
+    
+    @media (max-width:720px) {
+        p {
+            font-size: 65px;
+            width: 600px;
+        }
+        #mail i,
+        #social i {
+            font-size: 25px;
+        }
+        #mail i span,
+        #social i span {
+            font-size: 15px;
+        }
+        .box img {
+            visibility: hidden;
+        }
+        h6 {
+            font-size: 15px;
+        }
     }
-    .form-area {
-        text-align: center;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        animation: flash 4s linear 1s;
-        margin: 45px 0 0 0;
+    
+    @media (max-width:650px) {
+        .logo {
+            width: 280px;
+        }
+        .box img {
+            visibility: hidden;
+        }
+        p {
+            font-size: 35px;
+            width: 400px;
+        }
+        h6 {
+            font-size: 15px;
+        }
+        #social {
+            width: 40px;
+            height: 40px;
+            background-color: rgb(13, 13, 13);
+            position: absolute;
+            top: 95%;
+            transform: translate(-450%, 0);
+            border: none;
+        }
+        #mail {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(13, 13, 13);
+            position: absolute;
+            top: 95%;
+            transform: translate(40%, 0);
+            border: none;
+        }
+        .form-area {
+            text-align: center;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: flash 4s linear 1s;
+            margin: 45px 0 0 0;
+        }
+        .form-area input {
+            padding: 10px;
+            font-size: 19px;
+            width: 200px;
+            height: 20px;
+            display: block;
+            border: none;
+            background-color: rgb(13, 13, 13);
+            text-align: center;
+            border: 2px white solid;
+        }
+        .form-area button {
+            display: block;
+            margin: 30px 0 0 0;
+            border: none;
+            font-size: 19px;
+            padding: 10px;
+            width: 220px;
+            height: 40px;
+            background-color: rgb(13, 13, 13);
+            color: white;
+            border: 2px white solid;
+        }
     }
-    .form-area input {
-        padding: 10px;
-        font-size: 19px;
-        width: 200px;
-        height: 20px;
-        display: block;
-        border: none;
-        background-color: rgb(13, 13, 13);
-        text-align: center;
-        border: 2px white solid;
+    
+    @media (max-width:500px) {
+        .logo {
+            width: 280px;
+        }
+        .box img {
+            visibility: hidden;
+        }
+        p {
+            font-size: 35px;
+            width: 300px;
+        }
+        h6 {
+            font-size: 10px;
+        }
+        #social {
+            width: 40px;
+            height: 40px;
+            background-color: rgb(13, 13, 13);
+            position: absolute;
+            top: 95%;
+            transform: translate(-400%, 0);
+            border: none;
+        }
+        #mail {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(13, 13, 13);
+            position: absolute;
+            top: 95%;
+            transform: translate(20%, 0);
+            border: none;
+        }
+        .form-area {
+            text-align: center;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: flash 4s linear 1s;
+            margin: 45px 0 0 0;
+        }
+        .form-area input {
+            padding: 10px;
+            font-size: 19px;
+            width: 200px;
+            height: 20px;
+            display: block;
+            border: none;
+            background-color: rgb(13, 13, 13);
+            text-align: center;
+            border: 2px white solid;
+        }
+        .form-area button {
+            display: block;
+            margin: 30px 0 0 0;
+            border: none;
+            font-size: 19px;
+            padding: 10px;
+            width: 220px;
+            height: 40px;
+            background-color: rgb(13, 13, 13);
+            color: white;
+            border: 2px white solid;
+        }
     }
-    .form-area button {
-        display: block;
-        margin: 30px 0 0 0;
-        border: none;
-        font-size: 19px;
-        padding: 10px;
-        width: 220px;
-        height: 40px;
-        background-color: rgb(13, 13, 13);
-        color: white;
-        border: 2px white solid;
+    
+    @media (max-width:450px) {
+        .box img {
+            visibility: hidden;
+        }
+        p {
+            font-size: 15px;
+            width: 150px;
+        }
+        h6 {
+            font-size: 10px;
+        }
+        .logo {
+            width: 280px;
+        }
+        #social {
+            width: 40px;
+            height: 40px;
+            background-color: rgb(13, 13, 13);
+            position: absolute;
+            top: 95%;
+            transform: translate(-300%, 0);
+            border: none;
+        }
+        #mail {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(13, 13, 13);
+            position: absolute;
+            top: 95%;
+            transform: translate(0%, 0);
+            border: none;
+        }
+        #mail i,
+        #social i {
+            font-size: 15px;
+        }
+        #mail i span,
+        #social i span {
+            font-size: 10px;
+        }
+        .form-area {
+            text-align: center;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: flash 4s linear 1s;
+            margin: 45px 0 0 0;
+        }
+        .form-area input {
+            padding: 10px;
+            font-size: 12px;
+            width: 150px;
+            height: 10px;
+            display: block;
+            border: none;
+            background-color: rgb(13, 13, 13);
+            text-align: center;
+            border: 2px white solid;
+        }
+        .form-area button {
+            display: block;
+            margin: 30px 0 0 0;
+            border: none;
+            font-size: 12px;
+            padding: 6px;
+            width: 170px;
+            height: 30px;
+            background-color: rgb(13, 13, 13);
+            color: white;
+            border: 2px white solid;
+        }
     }
-}
-
-@media (max-width:320px) {
-    .box img {
-        visibility: hidden;
-    }
-    p {
-        font-size: 35px;
-        width: 600px;
-    }
-    h6 {
-        font-size: 10px;
-    }
-    #social {
-        width: 40px;
-        height: 40px;
-        background-color: rgb(13, 13, 13);
-        position: absolute;
-        top: 95%;
-        transform: translate(-300%, 0);
-        border: none;
-    }
-    #mail {
-        width: 50px;
-        height: 50px;
-        background-color: rgb(13, 13, 13);
-        position: absolute;
-        top: 95%;
-        transform: translate(0%, 0);
-        border: none;
-    }
-    #mail i,
-    #social i {
-        font-size: 15px;
-    }
-    #mail i span,
-    #social i span {
-        font-size: 10px;
-    }
-    .form-area {
-        text-align: center;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        animation: flash 4s linear 1s;
-        margin: 45px 0 0 0;
-    }
-    .form-area input {
-        padding: 10px;
-        font-size: 12px;
-        width: 150px;
-        height: 10px;
-        display: block;
-        border: none;
-        background-color: rgb(13, 13, 13);
-        text-align: center;
-        border: 2px white solid;
-    }
-    .form-area button {
-        display: block;
-        margin: 30px 0 0 0;
-        border: none;
-        font-size: 12px;
-        padding: 6px;
-        width: 170px;
-        height: 30px;
-        background-color: rgb(13, 13, 13);
-        color: white;
-        border: 2px white solid;
-    }
-}
-
-
-/* 
+    /* 
 @media (max-width:600px) {
     p {
         font-size: 50px;
